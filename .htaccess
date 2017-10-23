@@ -1,3 +1,4 @@
+@ -1,35 +0,0 @@
 # compress text, HTML, JavaScript, CSS, and XML
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
