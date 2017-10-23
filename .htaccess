@@ -1,0 +1,35 @@
+# compress text, HTML, JavaScript, CSS, and XML
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+# remove browser bugs
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+Header append Vary User-Agent
+
+FileETag None
+Header unset ETag
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+
+ModPagespeed off
+
+
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^kieran-smith.co.uk [NC]
+RewriteRule ^(.*)$ http://www.kieran-smith.co.uk/$1 [L,R=301,NC]
+
+redirect 301 /portfolio http://www.kieran-smith.co.uk/portfolio.php
+redirect 301 /music http://www.kieran-smith.co.uk/music.php
+redirect 301 /blog http://www.kieran-smith.co.uk/blog.php
+redirect 301 /music http://www.kieran-smith.co.uk/music.php
+ErrorDocument 404 /page-not-found.php
