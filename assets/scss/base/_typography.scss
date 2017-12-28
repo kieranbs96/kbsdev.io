@@ -11,6 +11,7 @@ body {
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
+    text-align:center;
     &--main,
     &--sub {
         display: block;
@@ -18,8 +19,9 @@ body {
     &--main {
         font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 3.5rem;
-        animation: moveInLeft 1s ease-out;
+        letter-spacing: 0.4rem;
+        animation: moveInLeft 1.2s ease-out 0.5s;
+        animation-fill-mode: backwards;
         @include respond(phone) {
             letter-spacing: 1rem;
             font-size: 5rem;
@@ -28,8 +30,9 @@ body {
     &--sub {
         font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 1.74rem;
-        animation: moveInRight 1s ease-out;
+        letter-spacing: 0.74rem;
+        animation: moveInRight 1.2s ease-out 0.8s;
+        animation-fill-mode: backwards;
         @include respond(phone) {
             letter-spacing: .5rem;
         }
@@ -44,14 +47,15 @@ body {
     color: $primary-color;
     letter-spacing: .2rem;
     transition: all .2s;
+    text-align:center;
     @supports (-webkit-background-clip: text) {
         background-image: linear-gradient(to right, $primary-color-light, $primary-color-dark);
         -webkit-background-clip: text;
         color: transparent;
     }
     &:hover {
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+        transform: scale(1.1);
+        text-shadow: 0rem 0.5rem 1rem rgba($color-black, .2);
     }
     @include respond(tab-port) {
         font-size: 3rem;

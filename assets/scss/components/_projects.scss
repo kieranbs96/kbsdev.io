@@ -1,0 +1,27 @@
+.projects {
+    padding:5rem 0;
+    & > h2.heading-secondary {
+        display:block;
+    }
+    & > * {
+        margin: 0 auto;
+        width:80%;
+        padding:1.5rem;
+    }
+
+    &__card {
+
+    }
+
+    &__natours {
+
+    }
+
+    &__trillo {
+
+    }
+
+    &__knitwell {
+
+    }
+}

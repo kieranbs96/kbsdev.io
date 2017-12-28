@@ -1,0 +1,24 @@
+
+.display-nav {
+    display: none;
+}
+
+.nav__checkbox:checked ~ .display-nav {
+    display:block;
+}
+
+.nav {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    animation: moveInRight 1s ease-out 2.5s;
+    animation-fill-mode: backwards;
+    &__icon {
+        color: $color-white;
+        font-size: 5rem;
+    }
+    &__checkbox {
+        display:none;
+    }
+}
+
