@@ -1,0 +1,22 @@
+.btn {
+    &:link, &:visited {
+        text-decoration: none;
+        color: #3a3a3a;
+        background-color: white;
+        padding: 0.7rem 3rem;
+        float: left;
+        border-radius: 15rem;
+        margin: 1rem 0;
+        transition: all .3s;
+    }
+
+    &:hover {
+        box-shadow:0 1rem 2rem $color-grey-dark-3;
+        transform: translateY(-0.3rem);
+    }
+
+    &:active {
+        box-shadow:0 .5rem 1rem $color-grey-dark-3;
+        transform: translateY(0.4rem);
+    }
+}
