@@ -4,7 +4,7 @@
   "description": "Kieran",
   "main": "assets/js/main.js",
   "scripts": {
-    "watch:sass": "node-sass assets/scss/style.scss assets/scss/style.css -w",
+    "watch:sass": "node-sass assets/scss/style.scss assets/css/style.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass assets/scss/style.scss assets/css/style.comp.css",
