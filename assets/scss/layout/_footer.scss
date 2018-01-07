@@ -18,14 +18,9 @@
         margin:0 1rem;
         & > a {
 
-            & i {
-            color:inherit;
+            & svg {
+            color:$primary-color-light;
             transition:all .3s;
-                @supports (-webkit-background-clip:text) {
-                    background-image: linear-gradient(to right, #18346b, #3669d0);
-                    -webkit-background-clip: text;
-                    color: transparent;
-                }
                 &:hover {
                     color:$color-white;
 
@@ -43,16 +38,13 @@
             text-decoration:none;
             color:inherit;
             width:100%;
-            float:left;
+            font-size: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             & span {
                 text-align:left;
-                float:left;
-            }
-            & i {
-                text-align:right;
-                float:right;
-                line-height: 4rem;
-                font-size: 4rem;
+                font-size: 3rem;
             }
         }
     }

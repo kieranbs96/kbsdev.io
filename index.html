@@ -11,7 +11,10 @@
     <link rel="icon" href="assets/img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/fa/fontawesome-all.min.css">
+    <script>
+        FontAwesomeConfig = { searchPseudoElements: true };
+    </script>
+    <script defer src="assets/js/lib/fontawesome-all.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 </head>
 
@@ -30,7 +33,7 @@
         <div class="nav">
             <input name="nav" id="nav__checkbox" type="checkbox" class="nav__checkbox">
             <label class="nav__label" for="nav__checkbox"> <i class="nav__icon far fa-bars"></i> </label>
-            <nav class="display-nav">
+            <!--<nav class="display-nav">
                 <div class="display-nav__overlay">
                     <ul class="display-nav__list">
                         <li class="display-nav__item">Home</li>
@@ -39,7 +42,7 @@
                         <li class="display-nav__item">Contact</li>
                     </ul>
                 </div>
-            </nav>
+            </nav>-->
         </div>
 
 
@@ -55,7 +58,7 @@
             </h1>
         </div> 
         <div class="scroll">
-            <i class="scroll__icon far fa-angle-down"></i>
+            <i class="scroll__icon fal fa-angle-down"></i>
         </div>
     </header>
     <main>
@@ -63,63 +66,63 @@
             <div class="projects__natours">
                 <div class="projects__card">
                     <div class="projects__left">
-                        <img class="projects__logo" src="assets/img/logo-green-1x.png" alt="Natours Project">
+                        <img class="projects__logo" src="assets/img/logo-green-1x.png" alt="Natours Project Logo">
                     </div>
                     <div class="projects__right">
                         <h3 class="projects_title">Natours</h3>
-                        <p class="projects__text">Natours is a project created for an Advanced CSS & Sass course provided by 'Jonas Schmedtmann' - this taught me the power
+                        <p class="projects__text">Natours is a fake company the focus of which is to advertise tours for adventurous people, the project was created for an Advanced CSS & Sass course provided by 'Jonas Schmedtmann' - this taught me the power
                             of CSS animations, aswell as the power of SASS and Node and how to create a build process.</p>
-                        <a href="#natours" class="projects__read-more btn">More Info &rarr;</a>
+                        <a target="_blank" href="/projects/Natours/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                 </div>
             </div>
             <div class="projects__trillo">
                  <div class="projects__card">
                      <div class="projects__left">
-
+                        <img class="projects__logo" src="assets/img/trillo-logo.png" alt="Trillo Project Logo">
                      </div>
                      <div class="projects__right">
                         <h3 class="projects_title">Trillo</h3>
-                        <p class="projects__text">Coming soon...</p>
-                        <a href="#" class="projects__read-more btn">More Info &rarr;</a>
+                        <p class="projects__text">Trillo is a web app for booking Hotels, Flights, Car Rental and Tours very similar to Booking.com, the project was also created as part of the Advanced CSS & SASS course. This project is completely focussed around the power of Flexbox aswell as the use of SVG.</p>
+                        <a target="_blank" href="/projects/Trillo/" class="projects__read-more btn">See the website &rarr;</a>
                      </div>
                  </div>
             </div>
             <div class="projects__knitwell">
                  <div class="projects__card">
                     <div class="projects__left">
-                        <img class="projects__logo" src="assets/img/small-knitwell.png" alt="Cigars of Cuba Project">
+                        <img class="projects__logo" src="assets/img/small-knitwell.png" alt="Knitwell Wools Project Logo">
                     </div>
                     <div class="projects__right">
                         <h3 class="projects_title">Knitwell Wools</h3>
                         <p class="projects__text">Knitwell Wools is a website created by myself using Bootstrap 3 and the Sellerdeck CMS. The aim was to create a presentable
                             as well as a fast and easy to use website to adhere to the target audience.</p>
-                        <a href="#knitwell" class="projects__read-more btn">More Info &rarr;</a>
+                        <a target="_blank" href="https://www.knitwell.co.uk/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                    </div>
             </div>
             <div class="projects__nexter">
                 <div class="projects__card">
                     <div class="projects__left">
-            
+                        <img class="projects__logo" src="assets/img/nexter.png" alt="Nexter Project Logo">
                     </div>
                     <div class="projects__right">
                         <h3 class="projects_title">Nexter</h3>
-                        <p class="projects__text">Coming soon...</p>
-                        <a href="#" class="projects__read-more btn">More Info &rarr;</a>
+                        <p class="projects__text">Nexter is a real estate website that focusses and advertsises luxury estate. The project was also created as part of the Advanced CSS & SASS course and the focus was around CSS Grid nearly every part of the website is created using CSS Grid, even the most small of components.</p>
+                        <a target="_blank" href="/projects/Nexter/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                 </div>
             </div>
             <div class="projects__cigars-of-cuba">
                 <div class="projects__card">
                     <div class="projects__left">
-                        <img class="projects__logo" src="assets/img/cigars-of-cuba-logo.png" alt="Cigars of Cuba Project">
+                        <img class="projects__logo" src="assets/img/cigars-of-cuba-logo.png" alt="Cigars of Cuba Project Logo">
                     </div>
                     <div class="projects__right">
                         <h3 class="projects_title">Cigars of Cuba</h3>
                         <p class="projects__text">Cigars of Cuba is a website created by myself using HTML & CSS from scratch and the Sellerdeck CMS. The aim was to create
                             a presentable as well as a fast and easy to use website to adhere to the target audience.</p>
-                        <a href="#cigars" class="projects__read-more btn">More Info &rarr;</a>
+                        <a target="_blank" href="https://www.cigarsofcuba.co.uk/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                 </div>
             </div>

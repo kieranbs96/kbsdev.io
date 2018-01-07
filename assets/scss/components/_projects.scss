@@ -35,8 +35,13 @@
     }
 
     &__trillo {
-        background-color: rgba($color-grey-dark-3, 0.8);
+        background-image: linear-gradient(to right bottom, rgba(#ff3366, 0.8), rgba(#ba265d, 0.8)),
+        url(../img/trillo-hero.jpg);
+        background-size:cover;
 
+        img {
+            filter: drop-shadow(0px 2px 6px #000);
+        }
         @media (max-width: $bp-mob) {
             grid-column: 1 / -1;
             grid-row: 2 / 3;
@@ -44,9 +49,9 @@
     }
 
     &__nexter {
-        background-color: rgba($color-grey-dark-3, 0.8);
-        grid-row: 3 / 4;
-        grid-column: 1 / span 2;
+        background-image: linear-gradient(to right bottom, rgba(#101d2c, 0.8), rgba(#101d2c, 0.8)),
+        url(../img/nexter-hero.jpeg);
+        background-size:cover;
 
         @media (max-width: $bp-mob) {
             grid-column: 1 / -1;
@@ -69,6 +74,8 @@
     &__cigars-of-cuba {
          background-image: linear-gradient(to right bottom, rgba(35, 31, 32, 0.8), rgba(45, 41, 42, 0.8)), url(../img/cigars-bg.jpeg);
          background-size: cover;
+         grid-column: 1 / span 2;
+         grid-row: 3 / 4;
         @media (max-width: $bp-mob) {
             grid-column: 1 / -1;
             grid-row: 5 / 6;
