@@ -327,7 +327,8 @@ header {
         color: #1d48a1;
         transition: all .3s; }
         .footer-area__links > * > a svg:hover {
-          color: #fff; }
+          color: #fff;
+          transform: translateY(-0.3rem) scale(1.1); }
   .footer-area__contact {
     width: 17rem;
     margin: 1rem auto; }

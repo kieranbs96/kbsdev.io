@@ -30,10 +30,10 @@
         <div class="logo">
             <img class="logo__icon" src="assets/img/k-logo.png">
         </div>
-        <div class="nav">
+        <!--<div class="nav">
             <input name="nav" id="nav__checkbox" type="checkbox" class="nav__checkbox">
             <label class="nav__label" for="nav__checkbox"> <i class="nav__icon far fa-bars"></i> </label>
-            <!--<nav class="display-nav">
+            <nav class="display-nav">
                 <div class="display-nav__overlay">
                     <ul class="display-nav__list">
                         <li class="display-nav__item">Home</li>
@@ -42,8 +42,8 @@
                         <li class="display-nav__item">Contact</li>
                     </ul>
                 </div>
-            </nav>-->
-        </div>
+            </nav>
+        </div>-->
 
 
 
@@ -51,24 +51,26 @@
             <h1 class="heading-primary">
                 <span class="heading-primary--main">
                     Kieran Smith
-                </span> 
+                </span>
                 <span class="heading-primary--sub">
                     Front-End Web Developer
-                </span> 
+                </span>
             </h1>
-        </div> 
+        </div>
         <div class="scroll">
-            <i class="scroll__icon fal fa-angle-down"></i>
+            <a href="#projects">
+                <i class="scroll__icon fal fa-angle-down"></i>
+            </a>
         </div>
     </header>
     <main>
         <div class="projects" id="projects">
             <div class="projects__natours">
                 <div class="projects__card">
-                    <div class="projects__left">
+                    <div class="projects__images">
                         <img class="projects__logo" src="assets/img/logo-green-1x.png" alt="Natours Project Logo">
                     </div>
-                    <div class="projects__right">
+                    <div class="projects__content">
                         <h3 class="projects_title">Natours</h3>
                         <p class="projects__text">Natours is a fake company the focus of which is to advertise tours for adventurous people, the project was created for an Advanced CSS & Sass course provided by 'Jonas Schmedtmann' - this taught me the power
                             of CSS animations, aswell as the power of SASS and Node and how to create a build process.</p>
@@ -95,8 +97,7 @@
                     </div>
                     <div class="projects__right">
                         <h3 class="projects_title">Knitwell Wools</h3>
-                        <p class="projects__text">Knitwell Wools is a website created by myself using Bootstrap 3 and the Sellerdeck CMS. The aim was to create a presentable
-                            as well as a fast and easy to use website to adhere to the target audience.</p>
+                        <p class="projects__text">Knitwell is a well established knitting eCommerce store who have been around since 1949. The client wanted a fresh design that was usable for their audience which includes elderly customers. We decided to use Bootstrap 3 to make this possible as it's a solid framework for responsive web apps. The website was produced in the Sellerdeck Content Management system and includes a Mega Menu, Customized Checkout, Lazyload & Responsive Images. We also decided to include Feefo (Customer Review System) so that reviews could be left easily and be seen on product pages.  </p>
                         <a target="_blank" href="https://www.knitwell.co.uk/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                    </div>
@@ -130,31 +131,31 @@
         <div class="about">
 
         </div>
-        <!--<div class="contact">
+        <section class="contact">
             <h2 class="contact__heading heading-secondary">Contact Me</h2>
-            <form action="https://api.foform.com/forms/8bfedbf4-97e3-4e17-8f5f-1e6869f723a5/submissionsUrlEncoded" method="post">
+            <form class="contact__form" action="https://api.foform.com/forms/8bfedbf4-97e3-4e17-8f5f-1e6869f723a5/submissionsUrlEncoded" method="post">
                 <div class="contact__group">
-                    <label for="subject" class="contact__label"></label> Subject:
-                    <input id="subject" class="contact__input" type="text" name="subject">
+                    <label for="subject" class="contact__label">Subject:</label>
+                    <input id="subject" class="contact__input" type="text" name="subject" placeholder="Eh, what's up doc? (Subject..)">
                 </div>
                 <div class="contact__group">
-                    <label for="name" class="contact__label"></label> Name:
-                    <input id="name" class="contact__input" type="text" name="name">
+                    <label for="name" class="contact__label">Name:</label>
+                    <input id="name" class="contact__input" type="text" name="name" placeholder="Your Name">
                 </div>
                 <div class="contact__group">
-                    <label for="email" class="contact__label"></label> Email Address:
-                    <input id="email" class="contact__input" type="text" name="emailAddress">
+                    <label for="email" class="contact__label">Email Address:</label>
+                    <input id="email" class="contact__input" type="text" name="emailAddress" placeholder="Your Email Address, so I can get back to you!">
                 </div>
                 <div class="contact__group">
-                    <label for="message" class="contact__label"></label> Message
-                    <input id="message" class="contact__input" type="text" name="body">
+                    <label for="message" class="contact__label">Message</label>
+                    <input id="message" class="contact__input" type="text" name="body" placeholder="Speak your mind!">
                 </div>
 
                 <input class="contact__submit btn" type="submit" value="Send Mail">
             </form>
-            
+
             <script src="https://script.foform.com/foform.js"></script>
-        </div>-->
+        </section>
     </main>
     <footer>
         <div class="footer-area">
@@ -166,7 +167,6 @@
             </div>
             <div class="footer-area__links">
                 <div class="footer-area__links--twitter"><a target="_blank" href="//twitter.com/kbsdev" class="twitter__link"><i class="fab fa-twitter"></i></a> </div>
-                <!--<div class="footer-area__links--instagram"><a href="#" class="instagram__link"><i class="fab fa-instagram"></i></a></div>-->
                 <div class="footer-area__links--github"><a target="_blank" href="//github.com/kieranbs96" class="github__link"><i class="fab fa-github"></i></a></div>
                 <div class="footer-area__links--linkedin"><a target="_blank" href="//linkedin.com/in/kieranbs96" class="linkedin-in__link"><i class="fab fa-linkedin-in"></i></a></div>
             </div>

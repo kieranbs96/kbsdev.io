@@ -23,7 +23,7 @@
             transition:all .3s;
                 &:hover {
                     color:$color-white;
-
+                    transform: translateY(-0.3rem) scale(1.1);
                 }
             }
         }
