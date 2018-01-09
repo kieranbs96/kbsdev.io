@@ -16,6 +16,7 @@
   "author": "Kieran Smith",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.2.1",
     "postcss": "^6.0.14"
   },
   "devDependencies": {
