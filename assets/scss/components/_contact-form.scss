@@ -16,6 +16,7 @@
         margin:0 auto;
         min-width:30%;
         margin: 1rem 0;
+        border-bottom:2px solid transparent;
     }
 
     &__label {
@@ -31,11 +32,12 @@
 
         &::placeholder {
             color: #ccc;
+            font-size:1rem;
         }
 
         &:focus, &:active {
             outline:0;
-            border-bottom:1px solid $primary-color;
+            border-bottom:2px solid $primary-color;
         }
     }
 
