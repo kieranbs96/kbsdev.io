@@ -9,6 +9,9 @@
 *.vi
 *~
 *.sass-cache
+.sass-cache/
+.vscode/
+*.vscode
 node_modules/
 projects/
 .tmp/
