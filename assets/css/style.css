@@ -201,9 +201,7 @@ h1, h2, h3 {
 .projects {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 3rem;
-  padding: 3rem; }
+  grid-template-rows: repeat(3, 1fr); }
   .projects__images {
     grid-column: 1 / -1;
     grid-row: 1 / span 2;
@@ -217,64 +215,50 @@ h1, h2, h3 {
     color: #fff;
     display: grid;
     grid-template-columns: minmax(min-content, 1fr);
-    grid-template-rows: repeat(2, 1fr) repeat(2, min-content);
-    align-items: center;
-    padding: 3rem; }
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center; }
     .projects__card h3 {
       color: inherit; }
   .projects__natours {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
+    background-size: cover;
     grid-column: 1 / 2; }
     .projects__natours img {
       filter: invert(65%); }
-    .projects__natours .projects__images {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
-      background-size: cover; }
-    .projects__natours .projects__content {
-      background-color: #0d1a34; }
     @media (max-width: 50em) {
       .projects__natours {
         grid-column: 1 / -1;
         grid-row: 1 / 2; } }
-  .projects__trillo .projects__images {
+  .projects__trillo {
     background-image: linear-gradient(to right bottom, rgba(255, 51, 102, 0.8), rgba(186, 38, 93, 0.8)), url(../img/trillo-hero.jpg);
     background-size: cover; }
-  .projects__trillo .projects__content {
-    background-color: #0d1a34; }
-  .projects__trillo img {
-    filter: drop-shadow(0px 2px 6px #000); }
-  @media (max-width: 50em) {
-    .projects__trillo {
-      grid-column: 1 / -1;
-      grid-row: 2 / 3; } }
-  .projects__nexter .projects__images {
+    .projects__trillo img {
+      filter: drop-shadow(0px 2px 6px #000); }
+    @media (max-width: 50em) {
+      .projects__trillo {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3; } }
+  .projects__nexter {
     background-image: linear-gradient(to right bottom, rgba(16, 29, 44, 0.8), rgba(16, 29, 44, 0.8)), url(../img/nexter-hero.jpeg);
     background-size: cover; }
-  .projects__nexter .projects__content {
-    background-color: #0d1a34; }
-  @media (max-width: 50em) {
-    .projects__nexter {
-      grid-column: 1 / -1;
-      grid-row: 3 / 4; } }
+    @media (max-width: 50em) {
+      .projects__nexter {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4; } }
   .projects__knitwell {
-    grid-column: 2 / 3;
-    grid-row: 1 / span 2; }
-    .projects__knitwell .projects__images {
-      background-image: linear-gradient(to right bottom, rgba(215, 0, 109, 0.8), rgba(165, 0, 98, 0.8)), url(../img/knitwell-bg.jpg);
-      background-size: cover; }
-    .projects__knitwell .projects__content {
-      background-color: #0d1a34; }
+    background-image: linear-gradient(to right bottom, rgba(215, 0, 109, 0.8), rgba(165, 0, 98, 0.8)), url(../img/knitwell-bg.jpg);
+    background-size: cover;
+    grid-column: 1 / span 2;
+    grid-row: 3 / 4; }
     @media (max-width: 50em) {
       .projects__knitwell {
         grid-column: 1 / -1;
         grid-row: 4 / 5; } }
   .projects__cigars-of-cuba {
-    grid-column: 1 / span 2;
-    grid-row: 3 / 4; }
-    .projects__cigars-of-cuba .projects__images {
-      background-image: linear-gradient(to right bottom, rgba(35, 31, 32, 0.8), rgba(45, 41, 42, 0.8)), url(../img/cigars-bg.jpeg);
-      background-size: cover; }
-    .projects__cigars-of-cuba .projects__content {
-      background-color: #0d1a34; }
+    background-image: linear-gradient(to right bottom, rgba(35, 31, 32, 0.8), rgba(45, 41, 42, 0.8)), url(../img/cigars-bg.jpeg);
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; }
     @media (max-width: 50em) {
       .projects__cigars-of-cuba {
         grid-column: 1 / -1;
@@ -283,7 +267,7 @@ h1, h2, h3 {
     float: left; }
   .projects__logo {
     margin: 0 auto;
-    max-width: 11rem;
+    max-width: 30rem;
     height: auto;
     width: auto;
     max-height: 15rem; }
@@ -329,6 +313,13 @@ h1, h2, h3 {
   .contact__submit:hover {
     background-color: #1d48a1;
     border-color: #1d48a1; }
+
+.about {
+  height: 20rem;
+  display: block;
+  width: 100%;
+  float: left;
+  background-color: #0d1a34; }
 
 .display-nav {
   display: none; }

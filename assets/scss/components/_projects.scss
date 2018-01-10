@@ -1,9 +1,7 @@
 .projects {
     display:grid;
     grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap:3rem;
-    padding:3rem;
+    grid-template-rows: repeat(3, 1fr);
 
     &__images {
         grid-column: 1 / -1;
@@ -23,9 +21,8 @@
 
         display:grid;
         grid-template-columns: minmax(min-content, 1fr);
-        grid-template-rows: repeat(2, 1fr) repeat(2, min-content);
+        grid-template-rows: repeat(2, 1fr);
         align-items: center;
-        padding: 3rem;
 
         & h3 {
             color:inherit;
@@ -34,7 +31,9 @@
     }
 
     &__natours {
-
+            background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),
+            url(../img/hero-small.jpg);
+            background-size:cover;
         grid-column: 1 / 2;
 
         & img {
@@ -42,13 +41,10 @@
         }
 
         & .projects__images {
-            background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),
-            url(../img/hero-small.jpg);
-            background-size:cover;
+
         }
 
         & .projects__content {
-            background-color:$primary-color;
         }
 
         @media (max-width: $bp-mob) {
@@ -58,16 +54,15 @@
     }
 
     &__trillo {
-
-
-        & .projects__images {
         background-image: linear-gradient(to right bottom, rgba(#ff3366, 0.8), rgba(#ba265d, 0.8)),
         url(../img/trillo-hero.jpg);
         background-size:cover;
+
+        & .projects__images {
+
         }
 
         & .projects__content {
-            background-color: $primary-color;
         }
 
         img {
@@ -80,17 +75,17 @@
     }
 
     &__nexter {
-
-
-
-        & .projects__images {
         background-image: linear-gradient(to right bottom, rgba(#101d2c, 0.8), rgba(#101d2c, 0.8)),
         url(../img/nexter-hero.jpeg);
         background-size:cover;
+
+
+        & .projects__images {
+
         }
 
         & .projects__content {
-            background-color: $primary-color;
+            
         }
 
         @media (max-width: $bp-mob) {
@@ -100,18 +95,17 @@
     }
 
     &__knitwell {
-
-        grid-column: 2 / 3;
-        grid-row: 1 / span 2;
-
-        & .projects__images {
         background-image: linear-gradient(to right bottom, rgba(215, 0, 109, 0.8), rgba(165, 0, 98, 0.8)),
         url(../img/knitwell-bg.jpg);
         background-size:cover;
+        grid-column: 1 / span 2;
+        grid-row: 3 / 4;
+
+        & .projects__images {
+
         }
 
         & .projects__content {
-            background-color: $primary-color;
         }
 
         @media (max-width: $bp-mob) {
@@ -121,18 +115,18 @@
     }
 
     &__cigars-of-cuba {
-
-         grid-column: 1 / span 2;
-         grid-row: 3 / 4;
-
-        & .projects__images {
          background-image: linear-gradient(to right bottom, rgba(35, 31, 32, 0.8), rgba(45, 41, 42, 0.8)),
          url(../img/cigars-bg.jpeg);
          background-size: cover;
+         grid-column: 2 / 3;
+         grid-row: 2 / 3;
+
+        & .projects__images {
+
         }
 
         & .projects__content {
-            background-color: $primary-color;
+            
         }
 
         @media (max-width: $bp-mob) {
@@ -147,7 +141,7 @@
 
     &__logo {
         margin:0 auto;
-        max-width: 11rem;
+        max-width: 30rem;
         height: auto;
         width:auto;
         max-height:15rem;
