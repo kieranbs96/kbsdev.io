@@ -1,26 +1,48 @@
-header {
+.header {
     position:relative;
-    height:100vh;
+    height:50vh;
+    min-height:400px;
     width:100%;
-    background-image: linear-gradient(to right bottom, $primary-color-light, $primary-color-dark);
-}
+    background-image: linear-gradient(to left, $primary-color, $primary-color-dark);
+    display:flex;
+    flex-direction:column;
 
-.bg-video {
-    position:absolute;
-}
-
-.logo {
-    position:absolute;
-    top:2.5rem;
-    left: 2.5rem;
-    animation:moveInLeft 1s ease-out 2.5s;
-    animation-fill-mode: backwards;
-    &__icon {
-        color: $color-white;
-        font-size: 5rem;
-        width: 5rem;
-        height: auto;
+    &__logo {
+        flex: 0 0 auto;
+        padding: 2.5rem;
+        animation:moveInLeft 1s ease-out 2.5s;
+        animation-fill-mode: backwards;
+        &--icon {
+            color: $color-white;
+            font-size: 5rem;
+            width: 5rem;
+            height: auto;
+        }
     }
+
+    &__heading {
+        color: white;
+        line-height: 1;
+        font-size:4rem;
+        justify-self: center;
+        padding:2.5rem;
+
+        &--main {
+            display:block;
+            animation:fadeIn 1s ease-in 0.5s;
+            animation-fill-mode: backwards;
+            font-size:6rem;
+        }
+
+        &--sub {
+            display:block;
+            animation:fadeIn 1s ease-in 1.5s;
+            animation-fill-mode: backwards;
+        }
+    }
+
+
+
 }
 
 

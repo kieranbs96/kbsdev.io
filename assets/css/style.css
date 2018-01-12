@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700");
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -202,6 +208,8 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
   grid-template-rows: repeat(3, 1fr); }
+  .projects > * {
+    padding: 5rem 0; }
   .projects__images {
     grid-column: 1 / -1;
     grid-row: 1 / span 2;
@@ -210,7 +218,7 @@ h1, h2, h3 {
   .projects__content {
     grid-column: 1 / -1;
     grid-row: 3 / -1;
-    padding: 3rem; }
+    padding: 4rem 9rem; }
   .projects__card {
     color: #fff;
     display: grid;
@@ -274,52 +282,48 @@ h1, h2, h3 {
   .projects__right {
     float: right; }
 
-.contact__heading {
-  text-align: center;
-  display: block; }
-
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.contact__group {
-  display: flex;
-  margin: 0 auto;
-  min-width: 30%;
-  margin: 1rem 0;
-  border-bottom: 2px solid transparent; }
-
-.contact__label {
-  display: none; }
-
-.contact__input {
-  flex: 1;
-  border: 1px solid #eee;
-  padding: 1rem;
-  transition: all 0.1s;
-  color: #999; }
-  .contact__input::placeholder {
-    color: #ccc;
-    font-size: 1rem; }
-  .contact__input:focus, .contact__input:active {
-    outline: 0;
-    border-bottom: 2px solid #0d1a34; }
-
-.contact__submit {
-  background-color: #0d1a34;
-  border: 1px solid #0d1a34;
-  color: #fff; }
-  .contact__submit:hover {
-    background-color: #1d48a1;
-    border-color: #1d48a1; }
+.contact {
+  padding: 4rem 0; }
+  .contact__heading {
+    text-align: center;
+    display: block; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contact__group {
+    display: flex;
+    margin: 0 auto;
+    min-width: 30%;
+    margin: 1rem 0;
+    border-bottom: 2px solid transparent; }
+  .contact__label {
+    display: none; }
+  .contact__input {
+    flex: 1;
+    border: 1px solid #eee;
+    padding: 1rem;
+    transition: all 0.1s;
+    color: #999; }
+    .contact__input::placeholder {
+      color: #ccc;
+      font-size: 1rem; }
+    .contact__input:focus, .contact__input:active {
+      outline: 0;
+      border-bottom: 2px solid #0d1a34; }
+  .contact__submit {
+    background-color: #0d1a34;
+    border: 1px solid #0d1a34;
+    color: #fff; }
+    .contact__submit:hover {
+      background-color: #1d48a1;
+      border-color: #1d48a1; }
 
 .about {
   height: 20rem;
   display: block;
   width: 100%;
-  float: left;
-  background-color: #0d1a34; }
+  background-color: #d6d6d6; }
 
 .display-nav {
   display: none; }
@@ -339,26 +343,39 @@ h1, h2, h3 {
   .nav__checkbox {
     display: none; }
 
-header {
+.header {
   position: relative;
-  height: 100vh;
+  height: 50vh;
+  min-height: 400px;
   width: 100%;
-  background-image: linear-gradient(to right bottom, #1d48a1, #0a1429); }
-
-.bg-video {
-  position: absolute; }
-
-.logo {
-  position: absolute;
-  top: 2.5rem;
-  left: 2.5rem;
-  animation: moveInLeft 1s ease-out 2.5s;
-  animation-fill-mode: backwards; }
-  .logo__icon {
-    color: #fff;
-    font-size: 5rem;
-    width: 5rem;
-    height: auto; }
+  background-image: linear-gradient(to left, #0d1a34, #0a1429);
+  display: flex;
+  flex-direction: column; }
+  .header__logo {
+    flex: 0 0 auto;
+    padding: 2.5rem;
+    animation: moveInLeft 1s ease-out 2.5s;
+    animation-fill-mode: backwards; }
+    .header__logo--icon {
+      color: #fff;
+      font-size: 5rem;
+      width: 5rem;
+      height: auto; }
+  .header__heading {
+    color: white;
+    line-height: 1;
+    font-size: 4rem;
+    justify-self: center;
+    padding: 2.5rem; }
+    .header__heading--main {
+      display: block;
+      animation: fadeIn 1s ease-in 0.5s;
+      animation-fill-mode: backwards;
+      font-size: 6rem; }
+    .header__heading--sub {
+      display: block;
+      animation: fadeIn 1s ease-in 1.5s;
+      animation-fill-mode: backwards; }
 
 .footer-area {
   color: #fff;
