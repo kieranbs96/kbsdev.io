@@ -17,7 +17,16 @@
     &__content {
         grid-column: 1 / -1;
         grid-row: 3 / -1;
-        padding:4rem 9rem;
+        padding:4rem 2rem;
+
+        @include respond(phone) {
+            padding: 4rem 5rem;
+        }
+
+        @include respond(tab-land) {
+            padding: 4rem 9rem;
+        }
+
     }
 
     &__card {
@@ -145,10 +154,15 @@
 
     &__logo {
         margin:0 auto;
-        max-width: 30rem;
+        max-width: 17rem;
         height: auto;
-        width:auto;
+        width:100%;
         max-height:15rem;
+
+        @include respond(tab-port) {
+            max-width: 30rem;
+            width:auto;
+        }
     }
 
     &__right {

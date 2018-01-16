@@ -9,10 +9,10 @@
 html {
     font-size: 62.5%; // Deciding what 1rem is (10px by default)
     @include respond(tab-land) {
-        font-size: 56.25%; // 9px
+         // 9px
     }
     @include respond(tab-port) {
-        font-size: 50%; // 8px
+        
     }
     @include respond(big-desktop) {
         font-size: 75%; // 12px
@@ -21,6 +21,7 @@ html {
 
 body {
     box-sizing: border-box;
+    background-color: $color-grey-bg;
     @include respond(tab-port) {
         padding: 0;
     }

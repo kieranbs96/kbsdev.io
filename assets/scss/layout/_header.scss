@@ -1,11 +1,15 @@
 .header {
     position:relative;
-    height:50vh;
+    height:60vh;
     min-height:400px;
     width:100%;
     background-image: linear-gradient(to left, $primary-color, $primary-color-dark);
     display:flex;
     flex-direction:column;
+
+    @include respond(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    }
 
     &__logo {
         flex: 0 0 auto;
