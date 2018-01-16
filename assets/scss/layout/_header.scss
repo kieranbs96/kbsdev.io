@@ -14,7 +14,7 @@
     &__logo {
         flex: 0 0 auto;
         padding: 2.5rem;
-        animation:moveInLeft 1s ease-out 2.5s;
+        animation:moveInLeft 1s ease-out 2s;
         animation-fill-mode: backwards;
         &--icon {
             color: $color-white;
@@ -33,14 +33,14 @@
 
         &--main {
             display:block;
-            animation:fadeIn 1s ease-in 0.5s;
+            animation:fadeIn 1s ease-in .3s;
             animation-fill-mode: backwards;
             font-size:6rem;
         }
 
         &--sub {
             display:block;
-            animation:fadeIn 1s ease-in 1.5s;
+            animation:fadeIn 1s ease-in 1s;
             animation-fill-mode: backwards;
         }
     }

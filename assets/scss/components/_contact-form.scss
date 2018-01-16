@@ -19,6 +19,11 @@
         min-width:30%;
         margin: 1rem 0;
         border-bottom:2px solid transparent;
+        height:40px;
+    
+        & input:focus, input:active {
+            border-bottom:2px solid $primary-color;
+        }
 
         @include respond (tab-port) {
             display:flex;
@@ -32,10 +37,12 @@
 
     &__input {
         width:100%;
-        border:1px solid $color-grey-light-2;
+        border:1px solid #646464;
         padding:1rem;
         transition:all 0.1s;
-        color: $color-grey-dark-2;
+        color: rgb(90, 90, 90);
+        height:38px;
+
 
         @include respond(tab-port) {
             flex: 1;
@@ -43,13 +50,12 @@
         }
 
         &::placeholder {
-            color: #ccc;
+            color: rgb(150, 150, 150);
             font-size:1rem;
         }
 
         &:focus, &:active {
             outline:0;
-            border-bottom:2px solid $primary-color;
         }
     }
 
