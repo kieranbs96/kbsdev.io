@@ -1,0 +1,3 @@
+wasap.init({
+    enableIf: true
+});

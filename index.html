@@ -9,16 +9,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="assets/img/favicon.png">
     <link rel="icon" href="assets/img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
+    
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M7JW7L2');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
         FontAwesomeConfig = { searchPseudoElements: true };
     </script>
     <script defer src="assets/js/lib/fontawesome-all.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7JW7L2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="header">
         <div class="header__logo">
                 <img class="header__logo--icon" src="assets/img/k-logo.png">
@@ -31,6 +56,18 @@
                 Front-End Web Developer
             </span>
         </h1>
+        <div class="header__location">
+            <i class="header__location--icon fal fa-map-marker-alt"></i>
+            <span class="header__location--name">
+                London
+            </span>
+        </div>
+        <div class="header__mb-only">
+            <span data-whatsapp="447468523821" class="header__whatsapp-link">
+                Message me on WhatsApp
+                <i class="fab fa-whatsapp"></i>
+            </span>
+        </div>
         <div class="scroll">
             <a href="#projects">
                 <i class="scroll__icon fal fa-angle-down"></i>
@@ -42,8 +79,10 @@
             <div class="container">
             <h2 class="about__heading">Hi, My name is Kieran</h2>
             <div class="about__text">
-                I'm an enthusiastic Junior Web Developer based in London, I am very keen to learn and master the most modern and advanced technologies. In my leisure time participate in and enjoy swimming, cycling and playing as well as watching football, another hobby includes reading articles and blogs on Medium to keep me up to date in the Web Development industry my favourite publishers include Freecodecamp, Hackernoon and Codeburst. 
-                In the list below you can find my relevant Web Development skills.                
+                I'm an enthusiastic Junior Web Developer based in London, I am very keen to learn and master the most modern and advanced
+                technologies. In my leisure time participate in and enjoy swimming, cycling and playing as well as watching football, another
+                hobby includes reading articles and blogs on Medium to keep me up to date in the Web Development industry my favourite publishers
+                include: Freecodecamp, Hackernoon and Codeburst. In the list below you can find my relevant Web Development skills.
             </div>
             <div class="about__skills">
                 <div class="about__skill">
@@ -118,6 +157,14 @@
                         React
                     </p>
                 </div>
+                <div class="about__skill">
+                    <span class="about__skill-icon about__skill-icon--react">
+                        <i class="fal fa-compress"></i>
+                    </span>
+                    <p class="about__skill-text">
+                        RWD
+                    </p>
+                </div>
             </div>
             </div>  
         </div>
@@ -130,8 +177,10 @@
                     </div>
                     <div class="projects__content">
                         <h3 class="projects_title">Natours</h3>
-                        <p class="projects__text">Natours is a fictional company, the focus of Natours is to advertise tours for adventurous people, the project was created for a Advanced CSS & Sass course provided by 'Jonas Schmedtmann' - this taught me the power
-                            of CSS animations, aswell as SASS and Node and how to create a build process.</p>
+                            <p class="projects__text">Natours is a fictional company, the focus of Natours is to advertise tours for adventurous people, the project was created
+                                for an Advanced CSS & Sass course provided by 'Jonas Schmedtmann' - this taught me the power of CSS animations, as well
+                                as SASS and Node and how to create a build process. .
+                            </p>
                         <a target="_blank" href="/projects/Natours/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                 </div>
@@ -157,7 +206,11 @@
                     </div>
                     <div class="projects__content">
                         <h3 class="projects_title">Knitwell Wools</h3>
-                        <p class="projects__text">Knitwell is a well established knitting eCommerce store who have been around since 1949. The client wanted a fresh design that was usable for their audience which includes elderly customers. We decided to use Bootstrap 3 to make this possible as it's a solid framework for responsive web apps. The website was produced in the Sellerdeck Content Management system and includes a Mega Menu, Customized Checkout, Lazyload & Responsive Images. We also decided to include Feefo (Customer Review System) so that reviews could be left easily and be seen on product pages.  </p>
+                        <p class="projects__text">Knitwell is a well-established knitting eCommerce store who have been around since 1949. The client wanted a fresh design
+                            that was usable for their audience which includes elderly customers. We decided to use Bootstrap 3 to make this possible
+                            as it's a solid framework for responsive web apps. The website was produced in the Sellerdeck Content Management system
+                            and includes a Mega Menu, Customized Checkout, Lazyload & Responsive Images. We also decided to include Feefo (Customer
+                            Review System) so that reviews could be left easily and be seen on product pages. </p>
                         <a target="_blank" href="https://www.knitwell.co.uk/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                    </div>
@@ -169,7 +222,9 @@
                     </div>
                     <div class="projects__content">
                         <h3 class="projects_title">Nexter</h3>
-                        <p class="projects__text">Nexter is a real estate website that focusses and advertsises luxury estate. The project was also created as part of the Advanced CSS & SASS course and the focus was around CSS Grid nearly every part of the website is created using CSS Grid, even the most small of components.</p>
+                        <p class="projects__text">Nexter is a real estate website that focusses on and advertises luxury estate. The project was also created as part of the Advanced
+                            CSS & SASS course and the focus was on CSS Grid nearly every part of the website is created using CSS Grid, even the
+                            smallest of components.</p>
                         <a target="_blank" href="/projects/Nexter/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                 </div>
@@ -181,15 +236,15 @@
                     </div>
                     <div class="projects__content">
                         <h3 class="projects_title">Cigars of Cuba</h3>
-                        <p class="projects__text">Cigars of Cuba is a website created by myself using HTML & CSS from scratch and the Sellerdeck CMS. The aim was to create
-                            a presentable as well as a fast and easy to use website to adhere to the target audience.</p>
+                        <p class="projects__text">Cigars of Cuba is one of the top Cigars & Cigarette websites in the UK. The website was created by myself using HTML & CSS
+                            from scratch and the Sellerdeck CMS. The aim was to produce a fast and easy to use eCommerce experience for customers.</p>
                         <a target="_blank" href="https://www.cigarsofcuba.co.uk/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="contact">
-            <h2 class="contact__heading heading-secondary">Contact Me</h2>
+        <!-- <section class="contact">
+            <h2 class="contact__heading heading-secondary">Get in Touch</h2>
             <form class="contact__form" action="https://api.foform.com/forms/8bfedbf4-97e3-4e17-8f5f-1e6869f723a5/submissionsUrlEncoded" method="post">
                 <div class="contact__group">
                     <label for="subject" class="contact__label">Subject:</label>
@@ -207,12 +262,12 @@
                     <label for="message" class="contact__label">Message</label>
                     <input id="message" class="contact__input" type="text" name="body" placeholder="Speak your mind!">
                 </div>
-
+                <div class="g-recaptcha" data-sitekey="6LeKekEUAAAAAOXb1B2mLra2eo7LCpyl4UbBx6Jy"></div>
                 <input class="contact__submit btn" type="submit" value="Send Mail">
             </form>
 
             <script src="https://script.foform.com/foform.js"></script>
-        </section>
+        </section> -->
     </main>
     <footer>
         <div class="footer-area">
@@ -224,8 +279,17 @@
             </div>
             <div class="footer-area__links">
                 <div class="footer-area__links--twitter"><a target="_blank" href="//twitter.com/kbsdev" class="twitter__link"><i class="fab fa-twitter"></i></a> </div>
-                <div class="footer-area__links--github"><a target="_blank" href="//github.com/kieranbs96" class="github__link"><i class="fab fa-github"></i></a></div>
+                <div class="footer-area__links--whatsapp">
+                    <a target="_blank" data-whatsapp="447468523821" class="whatsapp__link ">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
                 <div class="footer-area__links--linkedin"><a target="_blank" href="//linkedin.com/in/kieranbs96" class="linkedin-in__link"><i class="fab fa-linkedin-in"></i></a></div>
+                <div class="footer-area__links--github">
+                    <a target="_blank" href="//github.com/kieranbs96" class="github__link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
                 <div class="footer-area__links--codepen">
                     <a target="_blank" href="//codepen.io/kieranbs96/" class="codepen__link">
                         <i class="fab fa-codepen"></i>
@@ -238,7 +302,7 @@
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
+    <script src="assets/js/lib/wasap.min.js"></script>
     <script src="assets/js/lib/modernizr.js"></script>
     <script src="assets/js/lib/jquery-3.2.1.min.js"></script>
     <script src="assets/js/main.js"></script>

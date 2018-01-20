@@ -45,50 +45,70 @@
 
         &-icon {
             font-size:4.5rem;
-            transition: all .2s;
+            transition: all .5s;
 
             &:hover {
-                animation:enlargeOnHover 2s ease-in infinite;
+                transform: translateY(-4px);
             }
 
             &--html {
-                color: #E34C26;
+                &:hover {
+                    color: #E34C26;
+                }
             }
 
             &--css {
-                color: #0074B7;
+                &:hover {
+                    color: #0074B7;
+                }
             }
 
             &--js {
-                color: #FBDF38;
+                &:hover {
+                    color: #FBDF38;
+                }
             }
 
             &--sass {
-                color: #D26698;
+                &:hover {
+                    color: #D26698;
+                }
             }
 
             &--git {
-                color: #010101;
+                &:hover {
+                    color: #010101;
+                }
             }
 
             &--node {
-                color: #2A803D;
+                &:hover {
+                    color: #2A803D;
+                }
             }
 
             &--gulp {
-                color: #F34954;
+                &:hover {
+                    color: #F34954;
+                }
             }
 
             &--react {
-                color: #3CDBF9;
+                &:hover {
+                    color: #3CDBF9;
+                }
             }
 
             &--fa {
-                color: #228ae6;
+                &:hover {
+                    color: #228ae6;
+                }
             }
 
             &--npm {
-                color: #D4343B;
+                &:hover {
+                    color: #D4343B;
+                }
             }
         }
 
