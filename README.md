@@ -1,8 +1,6 @@
 # Kieran Smith
 ## [kbsdev.io](http://kbsdev.io)
 
----
-
 ### Github
 [kieranbs96](https://github.com/kieranbs96)
 
