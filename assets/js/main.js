@@ -1,3 +1,3 @@
 wasap.init({
-    enableIf: true
+  enableIf: true
 });

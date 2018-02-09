@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 const RE_SELECTOR = /([.#]?[^\s#.]+)/;
 
-const WHATSAPP_API_PROTOCOL = 'whatsapp://send';
-const WHATSAPP_API_URL = 'https://api.whatsapp.com/api/send';
+const WHATSAPP_API_PROTOCOL = "whatsapp://send";
+const WHATSAPP_API_URL = "https://api.whatsapp.com/api/send";
 
 const defaults = {
   enableIf: /android|iphone|ipad/i,
@@ -11,7 +11,7 @@ const defaults = {
   uaString: window.navigator.userAgent,
   openCallback: null,
   elementCallback: null,
-  newNodeSelector: 'a.whatsapp-link',
+  newNodeSelector: "a.whatsapp-link"
 };
 
 function checkIfCallback(value, config) {
@@ -19,7 +19,7 @@ function checkIfCallback(value, config) {
     return value.test(config.uaString);
   }
 
-  if (typeof value === 'function') {
+  if (typeof value === "function") {
     return value();
   }
 
@@ -47,7 +47,7 @@ function buildLink(config, baseURI) {
     }
   });
 
-  return `${baseURI}${params.length ? `?${params.join('&')}` : ''}`;
+  return `${baseURI}${params.length ? `?${params.join("&")}` : ""}`;
 }
 
 function setupLink(node, newEl, config) {
@@ -57,16 +57,16 @@ function setupLink(node, newEl, config) {
 
   const options = {
     text: node.dataset.whatsappMessage,
-    phone: node.dataset.whatsapp,
+    phone: node.dataset.whatsapp
   };
 
-  if (newEl.tagName === 'A') {
+  if (newEl.tagName === "A") {
     newEl.href = buildLink(options, baseURI);
   }
 
-  if (typeof config.elementCallback === 'function') {
+  if (typeof config.elementCallback === "function") {
     config.elementCallback(node, params => {
-      if (typeof params === 'string') {
+      if (typeof params === "string") {
         params = { text: params };
       }
 
@@ -79,19 +79,17 @@ function setupLink(node, newEl, config) {
 }
 
 function makeEl(config) {
-  const parts = config.newNodeSelector
-    .split(RE_SELECTOR)
-    .filter(Boolean);
+  const parts = config.newNodeSelector.split(RE_SELECTOR).filter(Boolean);
 
   const target = document.createElement(parts[0]);
 
   for (let i = 1; i < parts.length; i += 1) {
     if (parts[i]) {
-      if (parts[i].charAt() === '.') {
+      if (parts[i].charAt() === ".") {
         target.classList.add(parts[i].substr(1));
       }
 
-      if (parts[i].charAt() === '#') {
+      if (parts[i].charAt() === "#") {
         target.id = parts[i].substr(1);
       }
     }
@@ -104,7 +102,7 @@ function append(node, config) {
   const newEl = makeEl(config);
   const body = node.innerHTML;
 
-  node.innerHTML = '';
+  node.innerHTML = "";
   node.appendChild(newEl);
 
   newEl.innerHTML = body;
@@ -117,7 +115,7 @@ function init(options) {
   const isEnabled = checkIfCallback(config.enableIf, config);
 
   if (isEnabled) {
-    const matchedElements = document.querySelectorAll('[data-whatsapp]');
+    const matchedElements = document.querySelectorAll("[data-whatsapp]");
 
     for (let i = 0; i < matchedElements.length; i += 1) {
       append(matchedElements[i], config);
@@ -126,5 +124,5 @@ function init(options) {
 }
 
 export default {
-  init,
+  init
 };

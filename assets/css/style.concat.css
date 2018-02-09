@@ -231,7 +231,16 @@ h1, h2, h3 {
 .projects {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
-  grid-template-rows: repeat(3, 1fr); }
+  grid-template-rows: min-content repeat(3, 1fr); }
+  .projects__heading {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1rem 0 !important;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #777; }
   .projects > * {
     padding: 5rem 0; }
   .projects__images {
@@ -400,28 +409,28 @@ h1, h2, h3 {
         flex: 0 0 25%; } }
     .about__skill-icon {
       font-size: 4.5rem;
-      transition: all .2s; }
+      transition: all .5s; }
       .about__skill-icon:hover {
-        animation: enlargeOnHover 2s ease-in infinite; }
-      .about__skill-icon--html {
+        transform: translateY(-4px); }
+      .about__skill-icon--html:hover {
         color: #E34C26; }
-      .about__skill-icon--css {
+      .about__skill-icon--css:hover {
         color: #0074B7; }
-      .about__skill-icon--js {
+      .about__skill-icon--js:hover {
         color: #FBDF38; }
-      .about__skill-icon--sass {
+      .about__skill-icon--sass:hover {
         color: #D26698; }
-      .about__skill-icon--git {
+      .about__skill-icon--git:hover {
         color: #010101; }
-      .about__skill-icon--node {
+      .about__skill-icon--node:hover {
         color: #2A803D; }
-      .about__skill-icon--gulp {
+      .about__skill-icon--gulp:hover {
         color: #F34954; }
-      .about__skill-icon--react {
+      .about__skill-icon--react:hover {
         color: #3CDBF9; }
-      .about__skill-icon--fa {
+      .about__skill-icon--fa:hover {
         color: #228ae6; }
-      .about__skill-icon--npm {
+      .about__skill-icon--npm:hover {
         color: #D4343B; }
     .about__skill-text {
       justify-self: start; }

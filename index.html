@@ -12,30 +12,31 @@
 
     <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M7JW7L2');
-    </script>
+    (function(w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({
+    "gtm.start": new Date().getTime(),
+    event: "gtm.js"
+  });
+  var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s),
+    dl = l != "dataLayer" ? "&l=" + l : "";
+  j.async = true;
+  j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window, document, "script", "dataLayer", "GTM-M7JW7L2");
+</script>
     <!-- End Google Tag Manager -->
 
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
-        FontAwesomeConfig = { searchPseudoElements: true };
-    </script>
+    FontAwesomeConfig = { searchPseudoElements: true };
+</script>
     <script defer src="assets/js/lib/fontawesome-all.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script src="https://unpkg.com/lodash@4.16.6"></script>
 </head>
 
 <body>
@@ -170,6 +171,9 @@
         </div>
 
         <div class="projects" id="projects">
+            <h1 class="projects__heading">
+              My Work
+            </h1>
             <div class="projects__natours">
                 <div class="projects__card">
                     <div class="projects__images">
@@ -181,7 +185,7 @@
                                 for an Advanced CSS & Sass course provided by 'Jonas Schmedtmann' - this taught me the power of CSS animations, as well
                                 as SASS and Node and how to create a build process. .
                             </p>
-                        <a target="_blank" href="/projects/Natours/" class="projects__read-more btn">See the website &rarr;</a>
+                        <a target="_blank" href="//natours-kbs.netlify.com/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -195,7 +199,7 @@
                         <p class="projects__text">Trillo is a web app for booking Hotels, Flights, Car Rental and Tours very similar to Booking.com, the project was also created
                         as part of the Advanced CSS & SASS course. This project is completely focussed around the power of Flexbox aswell as the
                         use of SVG.</p>
-                        <a target="_blank" href="/projects/Trillo/" class="projects__read-more btn">See the website &rarr;</a>
+                        <a target="_blank" href="//trillo-kbs.netlify.com/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -225,7 +229,7 @@
                         <p class="projects__text">Nexter is a real estate website that focusses on and advertises luxury estate. The project was also created as part of the Advanced
                             CSS & SASS course and the focus was on CSS Grid nearly every part of the website is created using CSS Grid, even the
                             smallest of components.</p>
-                        <a target="_blank" href="/projects/Nexter/" class="projects__read-more btn">See the website &rarr;</a>
+                        <a target="_blank" href="//nexter-kbs.netlify.com/" class="projects__read-more btn">See the website &rarr;</a>
                     </div>
                 </div>
             </div>
