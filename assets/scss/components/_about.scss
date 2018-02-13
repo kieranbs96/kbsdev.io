@@ -30,10 +30,8 @@
         flex: 0 0 50%;
         margin:1rem 0;
         display:grid;
-        grid-template-columns: 6rem minmax(min-content, 1fr);
-        grid-gap:1.5rem;
+        grid-template-columns: 1fr;
         justify-items:center;
-        align-items: center;
 
         @include respond(phone) {
             flex: 0 0 33.33%;
@@ -113,7 +111,11 @@
         }
 
         &-text {
-            justify-self: start;
+            justify-self: center;
+            line-height: 2;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-size: 1.9rem;
         }
 
     }

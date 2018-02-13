@@ -10,7 +10,10 @@
     padding: 1rem 0 !important;
     text-align: center;
     width: 100%;
-    border-top: 1px solid #777;
+    background: $primary-color;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 3px;
   }
   & > * {
     padding: 5rem 0;
