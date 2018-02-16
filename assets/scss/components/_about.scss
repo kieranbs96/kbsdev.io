@@ -1,122 +1,120 @@
 .about {
-    display:block;
-    width:100%;
-    background-color: #f3f3f3;
-    padding: 2rem 0 1rem 0;
-    min-height: 50vh;
-    overflow: hidden;
+  display: block;
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 2rem 0 1rem 0;
+  min-height: 50vh;
+  overflow: hidden;
 
-    .container {
-        padding: 2rem;
-        animation: slideUp 1.5s ease-out 1s;
-        animation-fill-mode: backwards;
+  .container {
+    padding: 2rem;
+    animation: slideUp 1.5s ease-out 1s;
+    animation-fill-mode: backwards;
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+
+  &__heading {
+    @include respond(tab-land) {
+      position: relative;
+      left: -4rem;
+    }
+  }
+
+  &__skill {
+    flex: 0 0 50%;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    @include respond(phone) {
+      flex: 0 0 33.33%;
     }
 
-    &__skills {
-        display:flex;
-        flex-wrap: wrap;
-        padding: 1rem 0;
+    @include respond(tab-port) {
+      flex: 0 0 25%;
     }
 
-    &__heading {
+    &-icon {
+      font-size: 4.5rem;
+      transition: all 0.5s;
 
-        @include respond(tab-land) {
-            position:relative;
-            left:-4rem;
+      &:hover {
+        transform: translateY(-4px);
+      }
+
+      &--html {
+        &:hover {
+          color: #e34c26;
         }
+      }
+
+      &--css {
+        &:hover {
+          color: #0074b7;
+        }
+      }
+
+      &--js {
+        &:hover {
+          color: #fbdf38;
+        }
+      }
+
+      &--sass {
+        &:hover {
+          color: #d26698;
+        }
+      }
+
+      &--git {
+        &:hover {
+          color: #010101;
+        }
+      }
+
+      &--node {
+        &:hover {
+          color: #2a803d;
+        }
+      }
+
+      &--gulp {
+        &:hover {
+          color: #f34954;
+        }
+      }
+
+      &--react {
+        &:hover {
+          color: #3cdbf9;
+        }
+      }
+
+      &--fa {
+        &:hover {
+          color: #228ae6;
+        }
+      }
+
+      &--npm {
+        &:hover {
+          color: #d4343b;
+        }
+      }
     }
 
-    &__skill {
-        flex: 0 0 50%;
-        margin:1rem 0;
-        display:grid;
-        grid-template-columns: 1fr;
-        justify-items:center;
-
-        @include respond(phone) {
-            flex: 0 0 33.33%;
-        }
-
-        @include respond(tab-port) {
-            flex: 0 0 25%;
-        }
-
-        &-icon {
-            font-size:4.5rem;
-            transition: all .5s;
-
-            &:hover {
-                transform: translateY(-4px);
-            }
-
-            &--html {
-                &:hover {
-                    color: #E34C26;
-                }
-            }
-
-            &--css {
-                &:hover {
-                    color: #0074B7;
-                }
-            }
-
-            &--js {
-                &:hover {
-                    color: #FBDF38;
-                }
-            }
-
-            &--sass {
-                &:hover {
-                    color: #D26698;
-                }
-            }
-
-            &--git {
-                &:hover {
-                    color: #010101;
-                }
-            }
-
-            &--node {
-                &:hover {
-                    color: #2A803D;
-                }
-            }
-
-            &--gulp {
-                &:hover {
-                    color: #F34954;
-                }
-            }
-
-            &--react {
-                &:hover {
-                    color: #3CDBF9;
-                }
-            }
-
-            &--fa {
-                &:hover {
-                    color: #228ae6;
-                }
-            }
-
-            &--npm {
-                &:hover {
-                    color: #D4343B;
-                }
-            }
-        }
-
-        &-text {
-            justify-self: center;
-            line-height: 2;
-            font-weight: 300;
-            letter-spacing: 1px;
-            font-size: 1.9rem;
-        }
-
+    &-text {
+      justify-self: center;
+      line-height: 2;
+      font-weight: 300;
+      letter-spacing: 1px;
+      font-size: 1.9rem;
     }
+  }
 }

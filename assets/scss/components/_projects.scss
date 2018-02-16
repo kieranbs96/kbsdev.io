@@ -45,6 +45,21 @@
       color: inherit;
     }
   }
+
+  &__react-yt {
+    background-image: linear-gradient(to bottom right, darken(#ff0000, 15%), lighten(#ff0000, 15%));
+
+    svg {
+      font-size: 10rem;
+      margin: 0 auto;
+    }
+
+    @media (max-width: $bp-mob) {
+      grid-column: 1 / -1;
+    }
+  }
+
+
   &__natours {
     background-image: linear-gradient(
         to right bottom,
@@ -94,6 +109,7 @@
       ),
       url(../img/nexter-hero.jpeg);
     background-size: cover;
+    grid-row: 3 / 4;
     & .projects__images {
     }
     & .projects__content {
@@ -111,7 +127,6 @@
       ),
       url(../img/knitwell-bg.jpg);
     background-size: cover;
-    grid-column: 1 / span 2;
     grid-row: 3 / 4;
     & .projects__images {
     }
