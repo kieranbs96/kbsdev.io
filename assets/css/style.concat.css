@@ -272,6 +272,15 @@ h1, h2, h3 {
     align-items: center; }
     .projects__card h3 {
       color: inherit; }
+    .projects__card-heading {
+      text-align: center;
+      font-size: 3.5rem; }
+  .projects__georgina {
+    background-image: linear-gradient(to bottom right, #014990, #bdd7ee); }
+    @media (max-width: 50em) {
+      .projects__georgina {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2; } }
   .projects__react-yt {
     background-image: linear-gradient(to bottom right, #b30000, #ff4d4d); }
     .projects__react-yt svg {
@@ -279,7 +288,8 @@ h1, h2, h3 {
       margin: 0 auto; }
     @media (max-width: 50em) {
       .projects__react-yt {
-        grid-column: 1 / -1; } }
+        grid-column: 1 / -1;
+        grid-row: 2 / 3; } }
   .projects__natours {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
     background-size: cover;
@@ -289,7 +299,7 @@ h1, h2, h3 {
     @media (max-width: 50em) {
       .projects__natours {
         grid-column: 1 / -1;
-        grid-row: 1 / 2; } }
+        grid-row: 5 / 6; } }
   .projects__trillo {
     background-image: linear-gradient(to right bottom, rgba(255, 51, 102, 0.8), rgba(186, 38, 93, 0.8)), url(../img/trillo-hero.jpg);
     background-size: cover; }
@@ -298,15 +308,16 @@ h1, h2, h3 {
     @media (max-width: 50em) {
       .projects__trillo {
         grid-column: 1 / -1;
-        grid-row: 2 / 3; } }
+        grid-row: 6 / 7; } }
   .projects__nexter {
     background-image: linear-gradient(to right bottom, rgba(16, 29, 44, 0.8), rgba(16, 29, 44, 0.8)), url(../img/nexter-hero.jpeg);
     background-size: cover;
-    grid-row: 3 / 4; }
+    grid-row: 4 / 5;
+    grid-column: 1 / -1; }
     @media (max-width: 50em) {
       .projects__nexter {
         grid-column: 1 / -1;
-        grid-row: 3 / 4; } }
+        grid-row: 7 / 8; } }
   .projects__knitwell {
     background-image: linear-gradient(to right bottom, rgba(215, 0, 109, 0.8), rgba(165, 0, 98, 0.8)), url(../img/knitwell-bg.jpg);
     background-size: cover;
@@ -314,7 +325,7 @@ h1, h2, h3 {
     @media (max-width: 50em) {
       .projects__knitwell {
         grid-column: 1 / -1;
-        grid-row: 4 / 5; } }
+        grid-row: 3 / 4; } }
   .projects__cigars-of-cuba {
     background-image: linear-gradient(to right bottom, rgba(35, 31, 32, 0.8), rgba(45, 41, 42, 0.8)), url(../img/cigars-bg.jpeg);
     background-size: cover;
@@ -323,7 +334,7 @@ h1, h2, h3 {
     @media (max-width: 50em) {
       .projects__cigars-of-cuba {
         grid-column: 1 / -1;
-        grid-row: 5 / 6; } }
+        grid-row: 4 / 5; } }
   .projects__left {
     float: left; }
   .projects__logo {
