@@ -44,6 +44,19 @@
     & h3 {
       color: inherit;
     }
+
+    &-heading {
+      text-align:center;
+      font-size: 3.5rem;
+    }
+  }
+
+  &__georgina {
+    background-image: linear-gradient(to bottom right, #014990, #bdd7ee);
+    @media (max-width: $bp-mob) {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
   }
 
   &__react-yt {
@@ -56,6 +69,7 @@
 
     @media (max-width: $bp-mob) {
       grid-column: 1 / -1;
+      grid-row: 2 / 3;
     }
   }
 
@@ -78,7 +92,7 @@
     }
     @media (max-width: $bp-mob) {
       grid-column: 1 / -1;
-      grid-row: 1 / 2;
+      grid-row: 5 / 6;
     }
   }
   &__trillo {
@@ -98,7 +112,7 @@
     }
     @media (max-width: $bp-mob) {
       grid-column: 1 / -1;
-      grid-row: 2 / 3;
+      grid-row: 6 / 7;
     }
   }
   &__nexter {
@@ -109,15 +123,18 @@
       ),
       url(../img/nexter-hero.jpeg);
     background-size: cover;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
     & .projects__images {
     }
     & .projects__content {
     }
+
     @media (max-width: $bp-mob) {
       grid-column: 1 / -1;
-      grid-row: 3 / 4;
+      grid-row: 7 / 8;
     }
+
   }
   &__knitwell {
     background-image: linear-gradient(
@@ -134,7 +151,7 @@
     }
     @media (max-width: $bp-mob) {
       grid-column: 1 / -1;
-      grid-row: 4 / 5;
+      grid-row: 3 / 4;
     }
   }
   &__cigars-of-cuba {
@@ -153,7 +170,7 @@
     }
     @media (max-width: $bp-mob) {
       grid-column: 1 / -1;
-      grid-row: 5 / 6;
+      grid-row: 4 / 5;
     }
   }
   &__left {
