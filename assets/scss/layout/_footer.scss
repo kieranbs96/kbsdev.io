@@ -58,3 +58,16 @@
         }
     }
 }
+
+
+.subFooter {
+
+    &__message {
+        text-align: right;
+        padding: 1rem;
+
+        &-heart {
+            color: red;
+        }
+    }
+}
